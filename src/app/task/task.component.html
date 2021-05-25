@@ -1,0 +1,22 @@
+<div class="task">
+  <div class="task-content">
+    <div class="task-complete">
+      <input 
+        type="checkbox" 
+        (change)="changeCompleted(checkCompleted.checked)"
+        [checked]="completed"
+        #checkCompleted
+      >
+    </div>
+    <div class="task-title" [ngClass]="{active: completed}">
+      {{ title }} 
+    </div>
+  </div>
+  <div class="task-delete">
+    <button
+      (click) = "deleteTask()"
+    >
+    x
+    </button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="input-container">
+  <label for="task-input" class="input-label">
+    Task title:
+  </label>
+  <input type="text" id="task-input" class="input" #taskInput>
+  <app-primary-btn class="input-btn" (click)="addNewTask(taskInput.value)">
+    Add new task
+  </app-primary-btn>
+</div>

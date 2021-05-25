@@ -1,0 +1,12 @@
+<h2 class="tasks-title">Tasks:</h2>
+<div class="tasks-container">
+
+  <app-task *ngFor="let task of tasks"
+    [id] = "task.id"
+    [title] = "task.title"
+    [completed] = "task.completed"
+    (deleteTaskEvent) = "deleteTask($event)"
+    (changeCompletedEvent) ="changeTaskCompleted($event)"
+  >
+  </app-task>
+</div>

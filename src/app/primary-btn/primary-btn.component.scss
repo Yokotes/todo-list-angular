@@ -1,0 +1,14 @@
+.primary-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px -1px #000;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
